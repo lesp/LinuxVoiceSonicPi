@@ -1,0 +1,25 @@
+use_bpm 120
+#variables
+c = 60
+d = 62
+e = 64
+f = 65
+g = 67
+a = 69
+b = 71
+delay = 0.3
+2.times do
+  use_synth :pulse
+
+  play_pattern [g,a,g,f,e,f,g]
+  sleep delay
+  play_pattern [d,e,f]
+  #sleep delay
+  play_pattern [e,f,g]
+  #sleep delay
+  play_pattern [g,a,g,f,e,f,g]
+  #sleep delay
+  play_pattern [d,g]
+  #sleep delay
+  play_pattern [e,c]
+end
