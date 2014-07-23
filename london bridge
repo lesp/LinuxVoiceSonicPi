@@ -1,5 +1,4 @@
-use_bpm 120
-#variables
+#Variables to contain our notes
 c = 60
 d = 62
 e = 64
@@ -7,19 +6,18 @@ f = 65
 g = 67
 a = 69
 b = 71
-delay = 0.3
 2.times do
-  use_synth :pulse
-
+  use_bpm 120
+  use_synth :pretty_bell
   play_pattern [g,a,g,f,e,f,g]
-  sleep delay
+  sleep 0.5
   play_pattern [d,e,f]
-  #sleep delay
+  sleep 0.5
   play_pattern [e,f,g]
-  #sleep delay
+  sleep 0.5
   play_pattern [g,a,g,f,e,f,g]
-  #sleep delay
+  sleep 0.5
   play_pattern [d,g]
-  #sleep delay
+  sleep 0.2
   play_pattern [e,c]
 end
